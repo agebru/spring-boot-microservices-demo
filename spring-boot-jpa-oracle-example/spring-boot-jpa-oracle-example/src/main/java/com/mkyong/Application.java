@@ -76,6 +76,8 @@ public class Application implements CommandLineRunner {
           System.out.println(customerRepository.findOne(4L));
           
           
+          
+          // for selecting customers with gmail email account
           System.out.println("\n7.findByEmailContaining(emailString)");  
           for (Customer customer : customerRepository.findByEmailContaining("gmail.com")) {
               System.out.println(customer);
