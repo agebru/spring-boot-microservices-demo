@@ -82,7 +82,7 @@ public class Application implements CommandLineRunner {
           for (Customer customer : customerRepository.findByEmailContaining("gmail.com")) {
               System.out.println(customer);
           }
-          
+         System.out.println("Number of Records in the table: "+customerRepository.count());
           System.out.println("Done!");
 
         exit(0);
